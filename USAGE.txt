@@ -5,9 +5,22 @@ requires text description during the tutorial phases so this was my
 solution to that.
 
 The limitations are primarily that the "writing" area is limited at design
-time.  You have a fixed blackboard on which to write.  You write all
-messages in the Weltmeister using the parameters (text.1, text.2, text.3).
-Your text has to fit into the given space.
+time.  You have a fixed blackboard on which to write.  You input as a 
+weltmeister parameter "text" containing your full text.  The entity will
+reflow the text to fit the blackboard.
+
+Tunable parameters of the entity:
+
+rectHeight, rectWidth - the billboard size
+billboardFrame - white frame around black billboard
+textFooter - I use this to tell user how to remove pause and billboard
+fontString - css style font string.  default "14px Courier
+textPadding - space between text and inner edge of rectanagle
+textLeading - space between lines of text
+
+I'd change these in the javascript entity as I can't imagine you'll vary 
+them over the game's life.  If I'm wrong, then connect them to settings :D
+
 
 To use:
 
