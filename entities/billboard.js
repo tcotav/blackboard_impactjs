@@ -33,7 +33,7 @@ ig.module(
         // difference between white and black frames
         billboardFrame:5,
         text:"",
-        textFooter:"press [enter] to continue",
+        textFooter:"press [space] to continue",
         fontString:"12px Courier",
         // extra padding between edge of text and border of rect
         textPadding: 5,
